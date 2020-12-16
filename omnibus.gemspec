@@ -34,6 +34,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency "thor",             "~> 0.18"
   gem.add_dependency "ffi-yajl",         "~> 2.3"
   gem.add_dependency "license_scout",    "~> 1.0"
+  # Direct dependency to allow forcing dependency ordering
+  gem.add_dependency "libyajl2"
 
   gem.add_dependency 'httparty'
   # Pin ffi (dep of ohai) to a version that can be compiled with older autoconfs
